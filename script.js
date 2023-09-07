@@ -1,6 +1,6 @@
 const doorImage1 = document.getElementById("door1");
 const doorImage2 = document.getElementById("door2");
-const doorImage3 = document.getElemenyById("door3");
+const doorImage3 = document.getElementById("door3");
 const startButton = document.getElementById("start");
 
 let botDoorPath = 'https://content.codecademy.com/projects/chore-door/images/robot.svg';
@@ -96,6 +96,7 @@ startButton.onclick = () => {
 
 // Start a game round
 const startRound = () => {
+  console.log("we are running!")
   doorImage1.src = closedDoorPath;
   doorImage2.src = closedDoorPath;
   doorImage3.src = closedDoorPath;
